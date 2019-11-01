@@ -1,0 +1,136 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    font-family:"Raleway" ;
+    
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* start header */
+header{
+    background:url('../imgs/pic-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.hero-text-box{
+    /* width: 1140px; */
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    /* text-align: center; */
+    padding-right: 10%;
+}
+ h1,
+ h2,
+ h3{
+
+    font-weight: 300 ;
+    text-transform: uppercase;
+}
+.hero-text-box h1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+
+}
+.tp-text{
+    padding-bottom: 31px;
+    font-family: "Kaushan Script";
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 125px;
+}
+.hero-text-box p{
+    color: #646464;
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+/*  start a btn  */
+.btn:link,
+ .btn:visited,
+ input[type=submit] {
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 200px;
+    padding: 10px 30px;
+    display: inline-block;
+    transition: background-color 0.2s, color 0.2s, border 0.2s ;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+   margin-right: 15px;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+
+.btn:hover,
+ .btn:active,
+ input[type=submit]:hover,
+ input[type=submit]:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit] {
+    border: 1px solid #cf6d17;
+
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: #cf6d17;
+    color: #fff;
+}
+/* end a btn */
+/* end  header */
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+
+}
+.navbar-menu{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    }
+    .navbar-menu li{
+        display: inline-block;
+         margin-left: 40px;
+    }
+    
+    .navbar-menu li a:link,
+    .navbar-menu li a:visited{
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-size: 90%;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.4s;
+        padding: 8px 0;
+    }
+    .navbar-menu li a:hover,
+    .navbar-menu li a:active{
+        border-bottom: 2px solid #e67e22;
+    } 
