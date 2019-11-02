@@ -247,6 +247,15 @@ h2::after {
 
 }
 
+.categories-items {
+    position: relative;
+    height: 316.438px;
+}
+
+.categrories-counter {
+    height: 133px;
+}
+
 .categories-show li {
     display: block;
     float: left;
