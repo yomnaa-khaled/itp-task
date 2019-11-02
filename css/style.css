@@ -169,7 +169,7 @@ letter-spacing: 1px;
 .categories-show{
     list-style: none;
     width: 100%;
-    margin-top: 50px;
+    margin-bottom: 0px;
 
 }
 .categories-show li{
@@ -196,3 +196,14 @@ letter-spacing: 1px;
     transform: scale(1.03);
    
 }
+.slide-num{
+    text-align: center;
+    padding: 20px;
+    background:#FBCA03 ;
+}
+.slide-num p{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;  
+}
+
