@@ -1,198 +1,279 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 18px;
-    font-family:"Raleway" ;
-    
+    font-family: "Raleway";
+
 }
-.row{
+
+.row {
     margin: 0 auto;
 }
-          /* start header */
-header{
-    background:url('../imgs/pic-1.jpg');
+
+.font-main {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.align-center {
+    text-align: center !important;
+}
+/* start header */
+header {
+    background: url('../imgs/pic-1.jpg');
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
 }
-.hero-text-box{
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-58% , -50%);
-    text-align: center;
-    padding-right: 10%;
-}
- h1,
- h2,
- h3{
 
-    font-weight: 300 ;
+.main-section-text{
+    position: absolute;
+    visibility: visible;
+    left: 8%;
+    top: 28%;
+    z-index: 1;
 }
-P{
+
+.hero-text-box{
+    font-size: 14px;
+    max-width: 660px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+P {
     color: #646464;
     font-size: 16px;
 }
 
-.hero-text-box h1{
-    margin-bottom: 35px;
-    color: black;
-    font-size: 55PX;
-    font-weight: bold;
+.hero-text-box h1 {
+    font-size: calc(14px + 6.142857em);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 0.2em;
 }
-.top-text{
-    font-size: 20px;
+
+.top-text {
+    font-size: calc(14px + 0.71428em);
+    margin: 0;
     font-weight: bold;
     font-family: Kaushan Script;
 }
-.hero-text-box p{
+
+.hero-text-box p {
     margin-bottom: 5%;
 }
-         /*  start a btn  */
+
+/*  start a btn  */
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited {
     BACKGROUND: #FFF;
     border-radius: 0px;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 15px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     padding: 10px 50px;
-    transition: background-color 0.2s, color 0.2s, border 0.2s ;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
 }
+
 .btn-full:hover,
-.btn-full:active{
+.btn-full:active {
     background-color: #FBCA03;
     color: #fff !important;
 }
-             /* end a btn */
 
-            /* end  header */ 
-            /*  start navbar  */
-.logo{
-    height: 100px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
+/* end a btn */
 
+/* end  header */
+/*  start navbar  */
+
+.main-nav{
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.navbar-menu{
+
+.nav-row{
+    padding: 0 2%;
+    height: 100%;
+}
+
+.nav-logo{
+    float: left;
+    margin-right: 30px;
+}
+
+.nav-logo  a{
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 118px;
+    height: 90px;
+}
+
+.logo{
+    max-width: 100%;
+    max-height: 90px;
+    vertical-align: middle;
+}
+
+.nav-items {
+    position: relative;
     float: right;
+}
+
+.nav-items ul {
+    display: inline-block;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.nav-items ul li {
+    margin: 0;
+    float: left;
+    margin-left: 50px;
+    position: relative;
     list-style: none;
-    margin-top: 55px;
-    }
-    .navbar-menu li{
-        display: inline-block;
-         margin-left: 40px;
-    }
-    
-    .navbar-menu li a:link,
-    .navbar-menu li a:visited{
-        text-decoration: none;
-        color: black;
-        text-transform: uppercase;
-        font-size: 90%;
-        border-bottom: 2px solid transparent;
-        transition: border-bottom 0.4s;
-        padding: 8px 0;
-    }
-    .navbar-menu li a:hover,
-    .navbar-menu li a:active{
-        border-bottom: 2px solid #FBCA03;
-    } 
-                    /* end navbar */
-    /* section */
-section{
+    padding: 0;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: -webkit-fill-available;
+}
+
+.navbar-menu li a:link,
+.navbar-menu li a:visited {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.4s;
+    padding: 8px 0;
+}
+
+.navbar-menu li a:hover,
+.navbar-menu li a:active {
+    border-bottom: 2px solid #FBCA03;
+}
+
+/* end navbar */
+/* section */
+section {
     padding: 80px 0;
 }
- h2{
-font-size: 180%;
-word-spacing: 2px;
-text-align: center;
-margin-bottom: 30px;
-letter-spacing: 1px;
 
-
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
 }
- h2::after{
+
+h2::after {
     background: #FBCA03;
     display: block;
     height: 2px;
     width: 100px;
-    content: ""; 
+    content: "";
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 40px;
 }
-.long-copy{
+
+.long-copy {
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
-    
+
 }
-.box{
+
+.box {
     padding: 3%;
 }
-.box h3{
+
+.box h3 {
     font-size: 20px;
     margin-bottom: 15px;
     margin: 0 0 10px 0;
 }
-.icon-big{
+
+.icon-big {
     color: #FBCA03;
 }
+
 /* start section part3 */
-.section-part3{
+.section-part3 {
     background-color: #f7f7f7;
 }
+
 .text-part3 h2 {
     text-align: left;
 }
+
 .text-part3 h2::after {
     margin: 0;
     margin-top: 30px;
 }
+
 .text-part3 p {
     margin-right: 20%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
- /* end section part3 */
-.section-part4 img{
-}
-.section-meals{
+
+/* end section part3 */
+.section-part4 img {}
+
+.section-meals {
     padding: 0;
 }
-.categories-show{
+
+.categories-show {
     list-style: none;
     width: 100%;
     margin-top: 50px;
 
 }
-.categories-show li{
+
+.categories-show li {
     display: block;
     float: left;
     width: 25%;
 }
-.slide-photo{
+
+.slide-photo {
     width: 100%;
     margin: 0;
     overflow: hidden;
     background-color: #000;
 }
-.slide-photo img{
+
+.slide-photo img {
     opacity: 0.7;
     width: 100%;
     height: auto;
     transform: scale(1.15);
-    transition:  transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
 }
 
-.slide-photo img:hover{
+.slide-photo img:hover {
     opacity: 1;
     transform: scale(1.03);
-   
+
 }
